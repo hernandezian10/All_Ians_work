@@ -3,11 +3,12 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float moveSpeed = 5f;
+    public float moveSpeed = 5f;
     private float moveDirection;
     private float jumpForce = 30f;
     private float checkRadius = .5f;
 
+    public GameObject myPlayer;
 
     public Transform ceilingCheck;
     public Transform groundCheck;
@@ -115,6 +116,14 @@ public class PlayerMovement : MonoBehaviour
         if(col.gameObject.tag == "MovingPlatform")
         {
             transform.parent = col.transform;
+        }
+        if (col.gameObject.CompareTag("Power Up"))
+        {
+            moveSpeed = 10f;
+        }
+        if (col.gameObject.CompareTag("spikes"))
+        {
+            Destroy(myPlayer);
         }
     }
     private void OnCollisionExit2D(Collision2D col)

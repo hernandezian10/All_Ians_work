@@ -66,10 +66,8 @@ public class PlayerManager : MonoBehaviour
         {
             transform.position = new Vector2(xLocal3, yLocal3);
         }
-        if(collision.gameObject.CompareTag("Portal.5"))
-        {
 
-        }
+
     }
     public void TakeDamage()
     {

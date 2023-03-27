@@ -12,6 +12,8 @@ TagManager:
   - MovingPlatform
   - Portal3
   - Boss
+  - Power Up
+  - spikes
   layers:
   - Default
   - TransparentFX
