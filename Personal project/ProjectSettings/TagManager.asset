@@ -4,27 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Floor
-  - Platform
-  - Currency
-  - portal
-  - Portal2
-  - MovingPlatform
-  - Portal3
-  - Boss
-  - Power Up
-  - spikes
-  - Projectile
-  - Ground
-  - roof
+  - Hook
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - ground
+  - 
   - Water
   - UI
-  - Spikes
+  - 
   - 
   - 
   - 

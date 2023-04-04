@@ -62,7 +62,7 @@ public class PlayerManager : MonoBehaviour
         {
             transform.position = new Vector2(xLocal2, yLocal2);
         }
-        if (collision.gameObject.CompareTag("Portal2"))
+        if (collision.gameObject.CompareTag("Portal3"))
         {
             transform.position = new Vector2(xLocal3, yLocal3);
         }
