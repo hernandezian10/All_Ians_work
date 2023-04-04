@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
 
     private bool isJumping = false;
-    private bool facingRight = true;
+    public bool facingRight = true;
     private bool isGrounded;
 
     private int jumpCount;
@@ -75,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
         if (moveDirection > 0 && !facingRight)
         {
             flipCharacter();
+
         }
         else if (moveDirection < 0 && facingRight)
         {

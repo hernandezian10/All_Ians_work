@@ -30,6 +30,7 @@ public class bossBehavior : MonoBehaviour
 
     public GameObject projectile2;
    
+    public GameObject bossPerson;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +65,7 @@ public class bossBehavior : MonoBehaviour
         {
             phase3 = false;
             isDead = true;
-          
+            Destroy(bossPerson);
         }
         if(!playerManager.portal1 && !playerManager)
         {
@@ -97,6 +98,10 @@ public class bossBehavior : MonoBehaviour
         if(collision.gameObject.tag =="Player")
         {
             playerManager.TakeDamage();
+        }
+        if(collision.gameObject.tag == "Projectile")
+        {
+            bossHealth--;
         }
     }
     public void projectileShoot()
